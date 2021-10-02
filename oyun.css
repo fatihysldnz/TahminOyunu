@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #2d3436;
+  font-family: "Press Start 2P";
+}
+
+header {
+  position: relative;
+
+  height: 300px;
+  border-bottom: 7px solid #eee;
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+}
+
+.aralik {
+  position: absolute;
+
+  right: 15px;
+  top: 20px;
+}
+
+.btn {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: inherit;
+  /* buton disindakilere atadigimiz dont-family den butonlara da miras sekleinde yararlansin diye */
+  padding: 20px 25px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.question {
+  position: absolute;
+  left: 50%;
+  background-color: #eee;
+  color: #333;
+  width: 180px;
+  bottom: 0;
+  font-size: 60px;
+  text-align: center;
+  padding: 25px;
+  transform: translate(-50%, 50%);
+}
+
+main {
+  height: 600px;
+  color: #eee;
+  display: flex; /*alttakileri kullanabilmek için*/
+  justify-content: space-around;
+  /* yatay olarak */
+  align-items: center;
+  /*dikey ortalar*/
+}
+.sağ {
+  width: 400px;
+  font-size: 20px;
+}
+
+.sol {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  /* buradaki elemanlar sütun şeklinde olsunlar */
+  align-items: center;
+}
+.tahmin {
+  background: none;
+  /* kendi rengi iptal ortama ayak uydursun */
+  border: 5px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 40px;
+  text-align: center;
+  width: 300px;
+
+  margin-bottom: 20px;
+  padding: 50px;
+}
+.mesaj {
+  margin-bottom: 150px;
+}
+.puan {
+  margin-bottom: 20px;
+}
